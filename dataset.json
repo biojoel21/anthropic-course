@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL like 's3://my-bucket.s3.us-west-2.amazonaws.com/key'. Return the region code (e.g., 'us-west-2')."
+  },
+  {
+    "task": "Create a JSON CloudFormation template snippet that defines an IAM role with a trust relationship allowing EC2 instances to assume the role."
+  },
+  {
+    "task": "Write a regular expression that validates AWS IAM role ARNs in the format 'arn:aws:iam::123456789012:role/RoleName'. The ARN should allow alphanumeric characters, hyphens, and forward slashes in the role name."
+  }
+]
