@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that extracts the AWS region from an S3 bucket URL. The function should handle URLs in the format 's3://bucket-name' and 's3.region.amazonaws.com/bucket-name'. Return the region or 'us-east-1' if not specified."
+    "task": "Extract all S3 bucket names from AWS CloudTrail logs in JSON format",
+    "format": "regex",
+    "solution_criteria": "Regex pattern should match S3 bucket names (lowercase letters, numbers, hyphens) and correctly extract them from bucket ARNs like 'arn:aws:s3:::my-bucket-name'"
   },
   {
-    "task": "Create a JSON object representing an AWS IAM policy that allows a user to read objects from a specific S3 bucket named 'my-data-bucket'. Include the appropriate Action, Resource, and Effect fields."
+    "task": "Parse an AWS IAM policy JSON and extract all allowed actions",
+    "format": "python",
+    "solution_criteria": "Function should return a list of all actions from the 'Action' field(s) in the policy document, handling both string and array formats, and supporting wildcard actions like 's3:*'"
   },
   {
-    "task": "Write a regular expression that validates an AWS EC2 security group ID. The ID format should start with 'sg-' followed by 8 or 17 hexadecimal characters."
+    "task": "Generate a JSON template for an AWS Lambda function environment variables configuration",
+    "format": "json",
+    "solution_criteria": "JSON object should define environment variables with proper structure including database connection strings, API endpoints, and feature flags with realistic AWS resource values"
   }
 ]
