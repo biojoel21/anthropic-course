@@ -1,17 +1,48 @@
 [
   {
-    "task": "Extract all S3 bucket names from AWS CloudTrail logs in JSON format",
-    "format": "regex",
-    "solution_criteria": "Regex pattern should match S3 bucket names (lowercase letters, numbers, hyphens) and correctly extract them from bucket ARNs like 'arn:aws:s3:::my-bucket-name'"
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training - maximize carbohydrate intake with proper meal timing for energy management",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan includes 4-5 eating occasions with strategic carbohydrate timing around training",
+      "Total daily carbohydrates align with high-endurance athlete needs (approximately 8-10g per kg body weight)",
+      "Plan is presented in compact, single-day format with clear meal times and portions"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing for energy management"
   },
   {
-    "task": "Parse an AWS IAM policy JSON and extract all allowed actions",
-    "format": "python",
-    "solution_criteria": "Function should return a list of all actions from the 'Action' field(s) in the policy document, handling both string and array formats, and supporting wildcard actions like 's3:*'"
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "90 kg",
+      "goal": "Build muscle mass with caloric surplus for strength training",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers all meals for one day (breakfast, lunch, dinner, snacks)",
+      "Total daily protein intake is at least 180g (2g per kg body weight)",
+      "Total daily calories support muscle-building surplus (approximately 3000-3500 kcal)",
+      "Plan is presented in compact, concise format suitable for quick reference"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) requiring high protein intake and caloric surplus for muscle building"
   },
   {
-    "task": "Generate a JSON template for an AWS Lambda function environment variables configuration",
-    "format": "json",
-    "solution_criteria": "JSON object should define environment variables with proper structure including database connection strings, API endpoints, and feature flags with realistic AWS resource values"
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "68",
+      "goal": "Endurance cycling performance with sustained energy for 3-hour training ride",
+      "restrictions": "Vegan (no animal products), no gluten, no nuts"
+    },
+    "solution_criteria": [
+      "Meal plan includes 3 meals and snacks totaling appropriate calories for endurance athlete with proper carbohydrate-to-protein ratio",
+      "All foods are vegan, gluten-free, and nut-free with plant-based protein sources (legumes, tofu, seeds, grains)",
+      "Nutrient timing includes carbohydrate-rich pre-ride meal and post-ride recovery nutrition"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete with dietary restrictions (vegan endurance cyclist) requiring alternative protein sources and nutrient timing within ethical constraints"
   }
 ]
