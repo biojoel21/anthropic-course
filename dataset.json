@@ -1,48 +1,18 @@
 [
   {
     "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "68 kg",
-      "goal": "Marathon training - maximize carbohydrate intake with proper meal timing for energy management",
-      "restrictions": "None"
-    },
-    "solution_criteria": [
-      "Meal plan includes 4-5 eating occasions with strategic carbohydrate timing around training",
-      "Total daily carbohydrates align with high-endurance athlete needs (approximately 8-10g per kg body weight)",
-      "Plan is presented in compact, single-day format with clear meal times and portions"
-    ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing for energy management"
-  },
-  {
-    "prompt_inputs": {
-      "height": "180 cm",
-      "weight": "90 kg",
-      "goal": "Build muscle mass with caloric surplus for strength training",
-      "restrictions": "None"
-    },
-    "solution_criteria": [
-      "Meal plan covers all meals for one day (breakfast, lunch, dinner, snacks)",
-      "Total daily protein intake is at least 180g (2g per kg body weight)",
-      "Total daily calories support muscle-building surplus (approximately 3000-3500 kcal)",
-      "Plan is presented in compact, concise format suitable for quick reference"
-    ],
-    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) requiring high protein intake and caloric surplus for muscle building"
-  },
-  {
-    "prompt_inputs": {
-      "height": "175",
+      "height": "178",
       "weight": "68",
-      "goal": "Endurance cycling performance with sustained energy for 3-hour training ride",
-      "restrictions": "Vegan (no animal products), no gluten, no nuts"
+      "goal": "Marathon preparation with high carbohydrate intake for endurance training",
+      "restrictions": "Vegan diet, no animal products"
     },
     "solution_criteria": [
-      "Meal plan includes 3 meals and snacks totaling appropriate calories for endurance athlete with proper carbohydrate-to-protein ratio",
-      "All foods are vegan, gluten-free, and nut-free with plant-based protein sources (legumes, tofu, seeds, grains)",
-      "Nutrient timing includes carbohydrate-rich pre-ride meal and post-ride recovery nutrition"
+      "Meal plan covers all three meals and snacks for one day",
+      "Includes high carbohydrate content (55-65% of calories) suitable for marathon training",
+      "All protein sources are complete vegan proteins or properly combined for amino acid completeness",
+      "Incorporates key micronutrients for endurance athletes (iron, B12, omega-3s)"
     ],
     "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with an athlete with dietary restrictions (vegan endurance cyclist) requiring alternative protein sources and nutrient timing within ethical constraints"
+    "scenario": "Testing with a vegan endurance athlete preparing for a marathon, requiring high carbohydrate intake, complete protein sources, and specific micronutrient considerations within caloric limits"
   }
 ]
