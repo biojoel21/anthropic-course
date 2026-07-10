@@ -113,11 +113,11 @@
             <div class="summary-stats">
                 <div class="stat-box">
                     <div>Total Test Cases</div>
-                    <div class="stat-value">1</div>
+                    <div class="stat-value">4</div>
                 </div>
                 <div class="stat-box">
                     <div>Average Score</div>
-                    <div class="stat-value">7.0 / 10</div>
+                    <div class="stat-value">8.8 / 10</div>
                 </div>
                 <div class="stat-box">
                     <div>Pass Rate (≥7)</div>
@@ -140,41 +140,119 @@
             <tbody>
     
             <tr>
-                <td>Testing with a vegan endurance athlete preparing for a marathon, requiring high carbohydrate intake, complete protein sources, and specific micronutrient considerations within caloric limits</td>
-                <td class="prompt-inputs"><strong>height:</strong> 178<br><strong>weight:</strong> 68<br><strong>goal:</strong> Marathon preparation with high carbohydrate intake for endurance training<br><strong>restrictions:</strong> Vegan diet, no animal products</td>
-                <td class="criteria">• Meal plan covers all three meals and snacks for one day<br>• Includes high carbohydrate content (55-65% of calories) suitable for marathon training<br>• All protein sources are complete vegan proteins or properly combined for amino acid completeness<br>• Incorporates key micronutrients for endurance athletes (iron, B12, omega-3s)</td>
-                <td class="output"><pre># One-Day Meal Plan for Marathon Preparation (Vegan Athlete)
-
-**Athlete Profile:** 178cm, 68kg, Vegan endurance athlete
-
-* **Calorie Target:** Approximately 3,200 calories (elevated for marathon training)
-* **Macronutrient Breakdown:** Protein (110g), Fat (85g), Carbs (480g)
-
-## Meal Plan:
-
-* **Breakfast (7:00 AM):** Oatmeal (100g dry weight) with banana (150g), ground flaxseed (15g), and almond milk (240ml). Side of whole wheat toast (60g) with tahini (20g).
-    * Protein: 18g, Fat: 16g, Carbs: 95g
-
-* **Mid-Morning Snack (10:00 AM):** Energy balls made with dates (80g) and almonds (30g). Orange (180g).
-    * Protein: 9g, Fat: 12g, Carbs: 65g
-
-* **Lunch (1:00 PM):** Chickpea and vegetable curry with chickpeas (150g cooked), sweet potato (150g), spinach (100g), onion (80g), and coconut milk (100ml). Brown rice (80g dry weight). Side salad with mixed greens (100g) and olive oil dressing (15ml).
-    * Protein: 18g, Fat: 14g, Carbs: 110g
-
-* **Afternoon Snack (4:00 PM):** Hummus (60g) with carrot sticks (150g) and whole grain crackers (50g). Apple (160g).
-    * Protein: 8g, Fat: 8g, Carbs: 75g
-
-* **Dinner (7:00 PM):** Lentil and quinoa bowl with red lentils (100g cooked), quinoa (60g dry weight), roasted broccoli (150g), bell pepper (100g), and tahini dressing (20g). Whole wheat pita bread (70g).
-    * Protein: 35g, Fat: 18g, Carbs: 95g
-
-* **Evening Snack (9:00 PM):** Smoothie with plant-based protein powder (25g), banana (100g), peanut butter (20g), and oat milk (240ml).
-    * Protein: 22g, Fat: 17g, Carbs: 40g
-
----
-
-This plan emphasizes **high-carbohydrate, plant-based whole foods** to fuel endurance training while meeting protein needs through legumes, grains, nuts, and seeds. The timing supports both daily training and long-run preparation for marathon success.</pre></td>
-                <td class="score-col"><span class="score score-medium">7</span></td>
-                <td class="reasoning">The solution fully satisfies all three mandatory requirements with clear daily totals, comprehensive macronutrient breakdowns, and detailed meal specifications with portions and timing. It meets the secondary criteria for high carbohydrate content (60% of calories) and uses properly combined vegan proteins. However, it falls short on the micronutrient criterion by not explicitly addressing B12 supplementation (essential for vegans) and providing limited discussion of omega-3 sources and iron bioavailability strategies. The plan is practical and well-structured but lacks the nutritional completeness expected for an endurance athlete on a vegan diet.</td>
+                <td>Testing with a humanities passage containing philosophical and theoretical concepts to verify extraction of abstract topics versus concrete terms</td>
+                <td class="prompt-inputs"><strong>content:</strong> Postmodern epistemology challenges the foundational assumptions of Enlightenment rationalism by interrogating the relationship between language, representation, and ontological reality. Derrida's concept of deconstruction operates through the identification of binary oppositions inherent in Western metaphysics, revealing how meaning is perpetually deferred through the play of différance. Simultaneously, phenomenological approaches grounded in Husserl's intentionality framework emphasize the primacy of conscious experience and the constitution of objects through subjective perception. These theoretical frameworks intersect when examining how discourse shapes social structures, particularly in postcolonial contexts where power relations are embedded within knowledge production itself. The tension between structural determinism and human agency remains unresolved within these philosophical traditions.</td>
+                <td class="criteria">• Extracts both abstract philosophical concepts (e.g., deconstruction, intentionality, différance) and concrete theoretical frameworks (e.g., postmodern epistemology, phenomenology, postcolonial theory)<br>• Identifies foundational ideas and scholarly traditions referenced in the passage<br>• Returns results as a valid JSON array of strings without additional fields or explanations</td>
+                <td class="output"><pre>```json
+[
+  "Postmodern epistemology",
+  "Enlightenment rationalism",
+  "Language and representation",
+  "Ontological reality",
+  "Deconstruction",
+  "Binary oppositions",
+  "Western metaphysics",
+  "Différance",
+  "Phenomenology",
+  "Husserl's intentionality",
+  "Conscious experience",
+  "Subjective perception",
+  "Discourse and social structures",
+  "Postcolonial contexts",
+  "Power relations",
+  "Knowledge production",
+  "Structural determinism",
+  "Human agency"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it contains a valid JSON array of strings with only topic names and no extra commentary. It meets the secondary criteria by extracting both abstract philosophical concepts and concrete theoretical frameworks, and by identifying foundational ideas and scholarly traditions. The extraction is thorough and accurate, capturing 18 distinct topics from the passage. While there are minor issues with granularity consistency and potential redundancy, these do not violate any stated criteria and represent only marginal areas for refinement.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a brief scientific abstract containing domain-specific jargon and methodology terms to ensure technical terminology is properly identified and formatted</td>
+                <td class="prompt-inputs"><strong>content:</strong> This study employs a quantitative approach utilizing multivariate regression analysis to investigate the correlation between CRISPR-Cas9 gene editing efficiency and off-target mutation rates in human embryonic stem cells. We conducted RNA-sequencing transcriptomics profiling across 48 samples, integrating bioinformatics pipelines with machine learning algorithms for predictive modeling. Our methodology incorporates high-throughput screening protocols and next-generation sequencing validation to assess genomic integrity. Results demonstrate that guide RNA design parameters significantly influence both on-target specificity and unintended chromosomal alterations, with implications for therapeutic applications in regenerative medicine and genetic disease treatment.</td>
+                <td class="criteria">• All key technical terms and methodologies are extracted (e.g., CRISPR-Cas9, multivariate regression, RNA-sequencing, machine learning)<br>• Domain-specific jargon is properly identified (e.g., off-target mutation rates, guide RNA design, genomic integrity)<br>• Output is formatted as a valid JSON array of strings<br>• No extraneous text or explanations are included outside the JSON array</td>
+                <td class="output"><pre>```json
+[
+  "CRISPR-Cas9 gene editing",
+  "off-target mutation rates",
+  "human embryonic stem cells",
+  "multivariate regression analysis",
+  "RNA-sequencing",
+  "transcriptomics profiling",
+  "bioinformatics pipelines",
+  "machine learning algorithms",
+  "predictive modeling",
+  "high-throughput screening",
+  "next-generation sequencing",
+  "genomic integrity",
+  "guide RNA design",
+  "on-target specificity",
+  "chromosomal alterations",
+  "regenerative medicine",
+  "genetic disease treatment"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it contains a valid JSON array of strings with only topic names, no extra commentary, and nothing outside the JSON structure. It successfully extracts the vast majority of key technical terms and domain-specific jargon from the passage. The extraction is accurate and well-organized. While a few minor topics could arguably have been included (like 'therapeutic applications' or 'quantitative approach'), the current selection represents the most important and substantive topics from the text. The solution demonstrates strong understanding of the domain and appropriate topic identification.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a passage containing nested or related topics to evaluate whether the prompt correctly distinguishes between main topics and subtopics versus merging similar concepts</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in machine learning have revolutionized natural language processing through the development of transformer architectures and attention mechanisms. These deep learning models, particularly BERT and GPT variants, have demonstrated exceptional performance in language understanding tasks such as sentiment analysis, named entity recognition, and machine translation. Furthermore, the application of neural networks to computational linguistics has enabled researchers to tackle complex problems in syntax parsing, semantic role labeling, and coreference resolution, while simultaneously improving transfer learning capabilities across diverse NLP applications.</td>
+                <td class="criteria">• Extracts distinct main topics (e.g., transformer architectures, attention mechanisms, BERT/GPT) without merging them into overly broad categories<br>• Distinguishes between primary topics and their specific applications or subtopics (e.g., 'sentiment analysis' and 'named entity recognition' as separate topics from 'language understanding')<br>• Avoids redundant or duplicate topic entries when the same concept is referenced multiple times<br>• Returns output as a valid JSON array of strings</td>
+                <td class="output"><pre>```json
+[
+  "machine learning",
+  "natural language processing",
+  "transformer architectures",
+  "attention mechanisms",
+  "deep learning",
+  "BERT",
+  "GPT",
+  "sentiment analysis",
+  "named entity recognition",
+  "machine translation",
+  "neural networks",
+  "computational linguistics",
+  "syntax parsing",
+  "semantic role labeling",
+  "coreference resolution",
+  "transfer learning"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage with no extra commentary. Regarding secondary criteria, it successfully extracts distinct main topics (transformer architectures, attention mechanisms, BERT, GPT as separate entries) and distinguishes between primary topics and their applications (sentiment analysis, NER, machine translation as separate from language understanding). No duplicate entries exist. The only minor issue is the inclusion of 'deep learning' alongside 'neural networks' and specific deep learning models, which creates slight redundancy, though both terms do appear in the source text and could be considered distinct conceptual topics. This is a very minor weakness that doesn't significantly impact the quality of the extraction.</td>
+            </tr>
+        
+            <tr>
+                <td>Testing with a passage containing ambiguous terms and multiple possible interpretations to assess how the prompt handles topic boundaries and contextual relevance filtering</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in machine learning have demonstrated significant applications across diverse domains. Neural networks, particularly deep learning architectures, have revolutionized computer vision tasks such as image classification and object detection. Meanwhile, natural language processing techniques leverage transformer models to enable machines to understand context and semantic meaning in text. The term 'learning' itself encompasses both supervised approaches where labeled data guides model training, and unsupervised methods that discover hidden patterns. Furthermore, reinforcement learning agents optimize decision-making through reward signals, a paradigm increasingly applied to robotics and game-playing systems. However, concerns about model interpretability and the 'black box' problem persist, raising questions about whether these systems truly understand language or merely perform statistical pattern matching at scale.</td>
+                <td class="criteria">• Distinguishes between distinct technical topics (e.g., computer vision, NLP, reinforcement learning) rather than grouping all under generic 'machine learning'<br>• Excludes meta-discussion terms that are not core topics (e.g., 'concerns', 'questions', 'paradigm')<br>• Handles ambiguous terms like 'learning' by extracting specific learning types rather than the general concept alone</td>
+                <td class="output"><pre>```json
+[
+  "machine learning",
+  "neural networks",
+  "deep learning",
+  "computer vision",
+  "image classification",
+  "object detection",
+  "natural language processing",
+  "transformer models",
+  "supervised learning",
+  "unsupervised learning",
+  "reinforcement learning",
+  "robotics",
+  "game-playing systems",
+  "model interpretability",
+  "black box problem",
+  "semantic meaning",
+  "pattern matching"
+]
+```</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">The solution meets all mandatory requirements: it is a valid JSON array of strings containing only topics without commentary. It also performs well on the secondary criteria by distinguishing between specific technical domains and handling ambiguous terms appropriately. However, two minor inclusions ('semantic meaning' and 'pattern matching') represent concepts or meta-discussion elements rather than core topics, which slightly violates the criterion to exclude meta-discussion terms and focus on distinct technical topics. These are minor issues that don't undermine the overall quality of the extraction.</td>
             </tr>
         
             </tbody>
