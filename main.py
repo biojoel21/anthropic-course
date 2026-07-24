@@ -1,0 +1,3 @@
+def greeting(): 
+    print("Hello, welcome to the text editor tool!")
+
