@@ -2,7 +2,7 @@ Metadata-Version: 2.4
 Name: app
 Version: 0.1.0
 Summary: Add your description here
-Requires-Python: >=3.10
+Requires-Python: <3.14,>=3.10
 Description-Content-Type: text/markdown
 Requires-Dist: anthropic>=0.51.0
 Requires-Dist: mcp[cli]>=1.8.0
@@ -15,7 +15,7 @@ MCP Chat is a command-line interface application that enables interactive chat c
 
 ## Prerequisites
 
-- Python 3.9+
+- Python 3.10-3.13
 - Anthropic API Key
 
 ## Setup
@@ -40,10 +40,10 @@ ANTHROPIC_API_KEY=""  # Enter your Anthropic API secret key
 pip install uv
 ```
 
-2. Create and activate a virtual environment:
+2. Create and activate a virtual environment (explicitly pin Python 3.12):
 
 ```bash
-uv venv
+uv venv --python 3.12
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
@@ -56,8 +56,10 @@ uv pip install -e .
 4. Run the project
 
 ```bash
-uv run main.py
+uv run --python 3.12 main.py
 ```
+
+If you already have another virtual environment active (for example, from the parent folder), deactivate it first so `uv` can use this project's `.venv` cleanly.
 
 #### Option 2: Setup without uv
 
